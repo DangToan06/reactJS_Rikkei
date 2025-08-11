@@ -7,15 +7,15 @@ class Student {
     this.name = name;
   }
 
-  public getId(): number {
+  getId(): number {
     return this.id;
   }
 
-  public getName(): string {
+  getName(): string {
     return this.name;
   }
 
-  public setName(newName: string): void {
+  setName(newName: string): void {
     this.name = newName;
   }
 }
@@ -29,7 +29,7 @@ class Classroom {
     this.students = [];
   }
 
-  public showStudents(): void {
+  showStudents(): void {
     if (this.students.length === 0) {
       console.log("Không có học sinh trong lớp.");
     } else {
@@ -40,15 +40,15 @@ class Classroom {
     }
   }
 
-  public addStudent(student: Student): void {
+  addStudent(student: Student): void {
     this.students.push(student);
   }
 
-  public filterStudent(id: number): Student[] {
+  filterStudent(id: number): Student[] {
     return this.students.filter((student) => student.getId() === id);
   }
 
-  public addStudentInClass(id: number): void {
+  addStudentInClass(id: number): void {
     const index = allStudents.findIndex((student) => student.getId() === id);
     if (index !== -1) {
       this.students.push(allStudents[index]);
@@ -58,7 +58,7 @@ class Classroom {
     }
   }
 
-  public removeStudent(id: number): void {
+  removeStudent(id: number): void {
     const index = this.students.findIndex((student) => student.getId() === id);
     if (index !== -1) {
       const removedStudent = this.students.splice(index, 1)[0];
@@ -69,7 +69,7 @@ class Classroom {
     }
   }
 
-  public editStudent(id: number, newName: string): void {
+  editStudent(id: number, newName: string): void {
     const student = this.students.find((student) => student.getId() === id);
     if (student) {
       student.setName(newName);

@@ -7,11 +7,11 @@ class Student {
     this.name = name;
   }
 
-  public getId(): number {
+  getId(): number {
     return this.id;
   }
 
-  public getName(): string {
+  getName(): string {
     return this.name;
   }
 }
@@ -25,7 +25,7 @@ class Classroom {
     this.students = [];
   }
 
-  public showStudents(): void {
+  showStudents(): void {
     if (this.students.length === 0) {
       console.log("Không có học sinh trong lớp.");
     } else {
@@ -36,15 +36,15 @@ class Classroom {
     }
   }
 
-  public addStudent(student: Student): void {
+  addStudent(student: Student): void {
     this.students.push(student);
   }
 
-  public filterStudent(id: number): Student[] {
+  filterStudent(id: number): Student[] {
     return this.students.filter((student) => student.getId() === id);
   }
 
-  public addStudentInClass(id: number): void {
+  addStudentInClass(id: number): void {
     const index = allStudents.findIndex((student) => student.getId() === id);
     if (index !== -1) {
       this.students.push(allStudents[index]);
