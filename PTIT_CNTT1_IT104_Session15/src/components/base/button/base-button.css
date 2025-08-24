@@ -1,0 +1,38 @@
+.base-button {
+  border: 1px solid transparent;
+  /* height: 40px; */
+  padding: 0 16px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.button-large {
+  height: 48px;
+}
+
+.button-medium {
+  height: 36px;
+}
+
+.button-small {
+  height: 28px;
+}
+
+.button-primary {
+  color: #fff;
+  background-color: #0b5ed7;
+  border-color: #0d6efd;
+}
+
+.button-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.button-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}

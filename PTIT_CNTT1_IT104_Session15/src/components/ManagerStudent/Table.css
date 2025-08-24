@@ -1,0 +1,82 @@
+.container {
+  padding: 30px;
+  overflow-x: auto;
+}
+
+.table-css {
+  width: 100%;
+  color: #595f6e;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+
+.head-table th {
+  border-bottom: 1px solid #d2d6dd;
+  padding: 1%;
+}
+
+.body-table tr td {
+  border-bottom: 1px solid #d2d6dd;
+  padding: 1%;
+  text-align: center;
+}
+
+.active {
+  padding: 5px;
+  border: 1px solid #9cd183;
+  background-color: #f6ffed;
+  color: green;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.non-active {
+  padding: 5px;
+  border: 1px solid #d3293a;
+  background-color: #fff1f0;
+  color: #d3293a;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.block {
+  padding: 5px;
+  border: 1px solid #883eb5;
+  background-color: #f9f0ff;
+  color: #883eb5;
+  border-radius: 3px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit {
+  padding: 5px;
+  border: 1px solid #ebbc86;
+  background-color: #fff7e6;
+  color: #ebbc86;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.delete {
+  padding: 5px;
+  border: 1px solid #d3293a;
+  background-color: #fff1f0;
+  color: #d3293a;
+  border-radius: 3px;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
