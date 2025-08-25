@@ -4,6 +4,7 @@
 // import Bai3 from "./components/Bai3";
 // import Bai4 from "./components/Bai4";
 import IndexManagerStudent from "./components/ManagerStudent/Index";
+// import TodoList from "./components/ManagerTodoList/TodoList";
 import "./App.css";
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Bai3 />
       <Bai4 /> */}
       <IndexManagerStudent />
+      {/* <TodoList /> */}
     </>
   );
 }
