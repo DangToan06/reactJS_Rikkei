@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.todo-container {
+  width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.todo-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-group button {
+  padding: 8px 15px;
+  background: #1a73e8;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  background: #0f5dc2;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin: 4px 0 12px 2px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.task-list input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: #7f8c8d;
+  opacity: 0.7;
+}
+
+.task-list label {
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions span {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.actions .edit {
+  color: orange;
+}
+
+.actions .delete {
+  color: red;
+}
+
+.footer {
+  background: #f5f5f5;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* .main:empty::after {
+  content: "Chưa có công việc nào. Hãy thêm công việc mới!";
+  display: block;
+  text-align: center;
+  color: #7f8c8d;
+  font-style: italic;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px dashed #dee2e6;
+} */
