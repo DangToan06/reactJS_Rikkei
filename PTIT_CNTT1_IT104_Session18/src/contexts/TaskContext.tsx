@@ -1,7 +1,5 @@
-import React, { useReducer } from "react";
-import TodoList from "../components/TodoList";
+import React from "react";
 import type { Task } from "../interfaces/task.Interface";
-import { taskReducer } from "../components/reducers/taskReducer";
 
 interface TaskContextType {
   tasks: Task[];
@@ -15,13 +13,3 @@ interface TaskContextType {
 export const TaskContext = React.createContext<TaskContextType | undefined>(
   undefined
 );
-
-export default function TaskContextProvider() {
-  const [tasks, dispatch] = useReducer(taskReducer, []);
-
-  return (
-    <TaskContext.Provider value={{ tasks }}>
-      <TodoList />
-    </TaskContext.Provider>
-  );
-}

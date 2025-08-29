@@ -6,6 +6,8 @@ export default function TodoInput() {
   const [inputValue, setInputValue] = useState<string>("");
   const [isShowError, setIsShowError] = useState<boolean>(false);
 
+  // Lay du lieu trong context
+
   //Goi reducer
   const [_, dispatch] = useReducer(taskReducer, []);
 

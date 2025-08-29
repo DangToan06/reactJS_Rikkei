@@ -1,7 +1,4 @@
-import React, { useContext } from "react";
 import TaskItem from "./TaskItem";
-import TaskContext from "../contexts/TaskContext";
-import type { Task } from "../interfaces/task.Interface";
 
 export default function TaskList() {
   // Lay gia tri tu context thong qua useContext

@@ -7,7 +7,7 @@ type Action =
     }
   | {
       type: "UPDATE_TASK";
-      payload: { id: number | string; name: string; isCompleted: boolean };
+      payload: { id: number | string; name: string };
     }
   | { type: "DELETE_TASK"; payload: { id: number | string } }
   | { type: "TOGGLE_TASK"; payload: { id: number | string } };
