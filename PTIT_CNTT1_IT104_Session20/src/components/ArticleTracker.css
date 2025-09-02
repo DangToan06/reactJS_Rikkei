@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  margin: 5% auto;
+  border: 1px solid #eae7e7;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  align-items: center;
+  width: 60%;
+  gap: 1%;
+  background-color: white;
+}
+
+.title {
+  color: rgb(55, 118, 165);
+}
+
+.progress-bar {
+  width: 90%;
+  background-color: #dfdddd;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.progress-fill {
+  background-color: green;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.progress-text {
+  color: #7b7a7a;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(248, 249, 251);
+  border-radius: 8px;
+  width: 90%;
+  padding: 2%;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.card-header {
+  font-size: 18px;
+  font-weight: 600;
+  color: #433e3e;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+}
+
+.badge.unread {
+  background-color: rgb(55, 118, 165);
+}
+
+.badge.read {
+  background-color: rgb(76, 176, 80);
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d1d0d0;
+  padding: 1.8%;
+  border-radius: 6px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(100, 102, 106, 1);
+}
+
+.card-tag {
+  font-size: 14px;
+  color: #525151;
+  background-color: #e7e3e3;
+  padding: 2px 8px;
+  border-radius: 12px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.btn-read {
+  color: white;
+  background-color: rgb(76, 176, 80);
+  border: none;
+  border-radius: 6px;
+  height: 35px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.btn-unread {
+  color: white;
+  background-color: rgb(247, 151, 30);
+  border: none;
+  border-radius: 6px;
+  height: 35px;
+  width: 140px;
+  cursor: pointer;
+}
