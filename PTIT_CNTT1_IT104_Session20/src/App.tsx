@@ -7,7 +7,10 @@
 // import Bai6 from "./components/Bai6"; //Bai6
 // import Counter from "./components/Counter"; //Bai7
 // import UserForm from "./components/UserForm";  // Bai8
-import Search from "./components/Search"; // Bai9
+// import Search from "./components/Search"; // Bai9
+
+import Feedback from "./chuaBai/Feedback";
+
 // import ArticleTracker from "./components/ArticleTracker"; // Bai10
 function App() {
   // const [showTimer, setShowTimer] = useState(true); // Bai5
@@ -42,10 +45,12 @@ function App() {
       {/* <UserForm /> */}
 
       {/* Bai9 */}
-      <Search />
+      {/* <Search /> */}
 
       {/* Bai10 */}
       {/* <ArticleTracker /> */}
+
+      <Feedback />
     </>
   );
 }

@@ -68,7 +68,6 @@ export default function ArticleTracker() {
     <div className="container">
       <h1 className="title">Quản lý bài viết</h1>
 
-      {/* Progress bar */}
       <div className="progress-bar">
         <div
           className="progress-fill"
@@ -81,7 +80,6 @@ export default function ArticleTracker() {
         {progressPercentage.toFixed(0)}%)
       </p>
 
-      {/* Unread posts */}
       <div className="card-container">
         <div className="card-header">
           Bài viết chưa đọc:
@@ -100,7 +98,6 @@ export default function ArticleTracker() {
         ))}
       </div>
 
-      {/* Read posts */}
       <div className="card-container">
         <div className="card-header">
           Bài viết đã đọc:
