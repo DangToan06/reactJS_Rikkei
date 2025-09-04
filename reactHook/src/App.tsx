@@ -1,9 +1,26 @@
-import UseStateDemo from "./components/UseStateDemo";
+// import UseStateDemo from "./components/UseStateDemo";
+
+import UseReducer from "./components/UseReducer";
+
+// import UseRef from "./components/UseRef";
+
+// import { useState } from "react";
+// import UseEffect from "./components/UseEffect";
 
 function App() {
+  // const [isShow, setIsShow] = useState<boolean>(false);
   return (
     <>
-      <UseStateDemo />
+      {/* <UseStateDemo /> */}
+
+      {/* <div>
+        <button onClick={() => setIsShow(!isShow)}>Toggle</button>
+      </div>
+      {isShow && <UseEffect />} */}
+
+      {/* <UseRef /> */}
+
+      <UseReducer />
     </>
   );
 }
