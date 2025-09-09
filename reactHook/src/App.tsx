@@ -1,11 +1,14 @@
 // import UseStateDemo from "./components/UseStateDemo";
 
-import UseReducer from "./components/UseReducer";
+// import UseReducer from "./components/UseReducer";
 
 // import UseRef from "./components/UseRef";
 
 // import { useState } from "react";
 // import UseEffect from "./components/UseEffect";
+import "antd/dist/reset.css";
+import Index from "./components/LuyenTap/Index";
+import "./App.css";
 
 function App() {
   // const [isShow, setIsShow] = useState<boolean>(false);
@@ -20,7 +23,8 @@ function App() {
 
       {/* <UseRef /> */}
 
-      <UseReducer />
+      {/* <UseReducer /> */}
+      <Index />
     </>
   );
 }
