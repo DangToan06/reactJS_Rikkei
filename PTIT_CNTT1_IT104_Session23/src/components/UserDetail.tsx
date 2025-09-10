@@ -3,6 +3,8 @@ import type { User } from "../interface/User";
 
 export default function UserDetail() {
   const location = useLocation();
+  console.log(location);
+
   const user = location.state as User;
 
   return (
