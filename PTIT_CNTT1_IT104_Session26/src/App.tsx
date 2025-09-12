@@ -1,6 +1,8 @@
 import { Suspense } from "react";
 
-import LazyLoadComp from "./Components/LazyLoadComp";
+import React from "react";
+
+const LazyLoadComp = React.lazy(() => import("./Components/LazyLoadComp"));
 
 function App() {
   return (
