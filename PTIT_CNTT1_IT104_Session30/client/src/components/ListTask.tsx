@@ -15,7 +15,6 @@ type PropsType = {
 };
 
 export default function ListTask({ getAllTask, tasks }: PropsType) {
-  console.log(tasks);
   const handleChangeStatus = async (task: Task) => {
     try {
       await axios.patch(`http://localhost:3000/Todos/${task.id}`, {

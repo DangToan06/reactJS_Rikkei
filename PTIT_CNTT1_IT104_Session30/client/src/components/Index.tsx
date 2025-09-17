@@ -52,7 +52,7 @@ export default function Index() {
         <AddTask loadAddTask={getAllTask} />
         <FilterTask handleFilter={handleFilter} />
         <ListTask getAllTask={getAllTask} tasks={tasks} />
-        <Delete />
+        <Delete reLoadPage={getAllTask} />
         {isLoading ? (
           <div className="absolute bg-black w-[100vw] h-[100vh] left-0 top-0 opacity-[0.5] z-10 flex justify-center items-center">
             <Spin
