@@ -80,9 +80,11 @@ export default function PostList() {
       render: (_, record) => (
         <Space size="middle">
           <ModalBlock post={record} reLoadBlock={fetchAllPost}></ModalBlock>
-          <Button color="primary" variant="outlined">
-            Sửa
-          </Button>
+          <FormPost
+            postNow={record}
+            statusButton={"edit"}
+            reLoadCreate={fetchAllPost}
+          ></FormPost>
           <Button color="danger" variant="solid">
             Xóa
           </Button>
@@ -102,7 +104,11 @@ export default function PostList() {
               options={[{ value: "", label: "Lọc bài viết" }]}
             />
           </div>
-          <FormPost reLoadCreate={fetchAllPost}></FormPost>
+          <FormPost
+            postNow={""}
+            statusButton={"add"}
+            reLoadCreate={fetchAllPost}
+          ></FormPost>
         </div>
 
         <div>

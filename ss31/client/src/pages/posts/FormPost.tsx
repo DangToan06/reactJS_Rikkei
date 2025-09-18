@@ -7,12 +7,19 @@ import { PostStatus } from "../../enums/post.enum";
 import { createPost } from "../../apis/post.api";
 
 type PropsType = {
+  postNow: IPost | "";
+  statusButton: string;
   reLoadCreate: () => void;
 };
 
-export default function FormPost({ reLoadCreate }: PropsType) {
+export default function FormPost({
+  postNow,
+  statusButton,
+  reLoadCreate,
+}: PropsType) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalWaring, setIsModalWaring] = useState(false);
+  const [valueEdit, setValueEdit] = useState<IPost | null>(null);
   const [valueInput, setValueInput] = useState<IPost>({
     id: Number(uid()),
     title: "",
@@ -23,6 +30,10 @@ export default function FormPost({ reLoadCreate }: PropsType) {
   });
 
   const showModal = () => {
+    if (postNow !== undefined && postNow !== "" && postNow !== null) {
+      setValueEdit(postNow);
+    }
+
     setValueInput({
       id: Number(uid()),
       title: "",
@@ -36,6 +47,7 @@ export default function FormPost({ reLoadCreate }: PropsType) {
 
   const handleCancel = () => {
     setIsModalOpen(false);
+    setValueEdit(null);
   };
 
   const closeModalWaring = () => {
@@ -49,6 +61,11 @@ export default function FormPost({ reLoadCreate }: PropsType) {
       [name]: value,
     }));
   };
+
+  // const handleEdit = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   const { name, value } = e.target;
+  //   setValueEdit({ ...valueEdit, [name]: value });
+  // };
 
   const handleTextEditorChange = (content?: string) => {
     setValueInput((prev) => ({
@@ -65,6 +82,7 @@ export default function FormPost({ reLoadCreate }: PropsType) {
       valueInput.imageUrl === ""
     ) {
       setIsModalWaring(true);
+
       return;
     }
 
@@ -75,14 +93,22 @@ export default function FormPost({ reLoadCreate }: PropsType) {
       console.log("Lỗi: ", error);
     } finally {
       setIsModalOpen(false);
+      setValueEdit(null);
     }
   };
 
   return (
     <>
-      <Button type="primary" onClick={showModal}>
-        Thêm mới bài viết
-      </Button>
+      {statusButton === "add" ? (
+        <Button type="primary" onClick={showModal}>
+          Thêm mới bài viết
+        </Button>
+      ) : (
+        <Button color="primary" variant="outlined" onClick={showModal}>
+          Sửa
+        </Button>
+      )}
+
       {/* Modal Form thêm mới / Cập nhật bài viết */}
       <Modal
         title={<h3>Thêm mới bài viết</h3>}
@@ -97,7 +123,7 @@ export default function FormPost({ reLoadCreate }: PropsType) {
             <Input
               placeholder="Tên bài viết"
               name="title"
-              value={valueInput.title}
+              value={valueEdit !== null ? valueEdit.title : valueInput.title}
               onChange={handleInput}
             />
           </Form.Item>
@@ -105,7 +131,9 @@ export default function FormPost({ reLoadCreate }: PropsType) {
             <Input
               placeholder="Hình ảnh"
               name="imageUrl"
-              value={valueInput.imageUrl}
+              value={
+                valueEdit !== null ? valueEdit.imageUrl : valueInput.imageUrl
+              }
               onChange={handleInput}
             />
           </Form.Item>
@@ -113,7 +141,7 @@ export default function FormPost({ reLoadCreate }: PropsType) {
             <TextEditor
               height={400}
               onChange={handleTextEditorChange}
-              value={valueInput.content ? valueInput.content : ""}
+              value={valueEdit?.content ?? valueInput.content ?? ""}
             />
           </Form.Item>
         </Form>
