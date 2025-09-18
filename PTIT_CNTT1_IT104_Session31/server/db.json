@@ -1,0 +1,11 @@
+{
+    "posts": [
+        {
+            "id":1,
+            "title": "Tổng quan về react",
+            "imageUrl": "http://photo",
+            "createAt":"Web Sep 17 2025 08:22:40 GMT+0700 (Indochina Time)",
+            "status": "active"
+        }
+    ]
+}

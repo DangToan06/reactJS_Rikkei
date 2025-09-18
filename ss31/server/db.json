@@ -1,0 +1,100 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Tổng quan về ReactJS",
+      "imageUrl": "https://nodejs.org/static/images/logo.svg",
+      "createdAt": "17/09/2025",
+      "status": "active",
+      "content": "ReactJS là thư viện JavaScript phổ biến giúp xây dựng giao diện người dùng nhanh chóng và hiệu quả."
+    },
+    {
+      "id": 2,
+      "title": "Giới thiệu về Node.js",
+      "imageUrl": "https://nodejs.org/static/images/logo.svg",
+      "createdAt": "18/09/2025",
+      "status": "inactive",
+      "content": "Node.js là môi trường chạy JavaScript phía server, dựa trên V8 engine của Google."
+    },
+    {
+      "id": 3,
+      "title": "Hướng dẫn TypeScript cơ bản",
+      "imageUrl": "https://www.typescriptlang.org/assets/images/icons/apple-touch-icon-180x180.png",
+      "createdAt": "19/09/2025",
+      "status": "inactive",
+      "content": "TypeScript mở rộng JavaScript với kiểu tĩnh, giúp dễ bảo trì và phát triển dự án lớn."
+    },
+    {
+      "id": 4,
+      "title": "Làm quen với ExpressJS",
+      "imageUrl": "https://expressjs.com/images/express-facebook-share.png",
+      "createdAt": "20/09/2025",
+      "status": "active",
+      "content": "ExpressJS là framework web đơn giản, mạnh mẽ cho Node.js, hỗ trợ xây dựng REST API nhanh chóng."
+    },
+    {
+      "id": 5,
+      "title": "MongoDB cho người mới bắt đầu",
+      "imageUrl": "https://webimages.mongodb.com/_com_assets/cms/l6vqf7t08j2l5x7b4-horizontal_default_slate.svg",
+      "createdAt": "21/09/2025",
+      "status": "inactive",
+      "content": "MongoDB là hệ quản trị cơ sở dữ liệu NoSQL, lưu trữ dữ liệu dưới dạng JSON linh hoạt."
+    },
+    {
+      "id": 6,
+      "title": "REST API là gì?",
+      "imageUrl": "https://miro.medium.com/max/800/1*0kA8lF9TZPIYOvToNiOfzA.png",
+      "createdAt": "22/09/2025",
+      "status": "active",
+      "content": "REST API là kiến trúc giao tiếp giữa client và server qua giao thức HTTP với các phương thức chuẩn."
+    },
+    {
+      "id": 7,
+      "title": "Giới thiệu về GraphQL",
+      "imageUrl": "https://graphql.org/img/logo.svg",
+      "createdAt": "23/09/2025",
+      "status": "active",
+      "content": "GraphQL là ngôn ngữ truy vấn API, cho phép client lấy chính xác dữ liệu cần thiết."
+    },
+    {
+      "id": 8,
+      "title": "State Management với Redux",
+      "imageUrl": "https://redux.js.org/img/redux-logo-landscape.png",
+      "createdAt": "24/09/2025",
+      "status": "inactive",
+      "content": "Redux là thư viện quản lý state tập trung, giúp đồng bộ dữ liệu trong ứng dụng React."
+    },
+    {
+      "id": 9,
+      "title": "CSS Flexbox toàn tập",
+      "imageUrl": "https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg",
+      "createdAt": "25/09/2025",
+      "status": "active",
+      "content": "Flexbox cung cấp cách sắp xếp layout hiện đại, giúp responsive dễ dàng và gọn gàng."
+    },
+    {
+      "id": 10,
+      "title": "TailwindCSS cơ bản",
+      "imageUrl": "https://tailwindcss.com/_next/static/media/social-card-large.a6e71726.jpg",
+      "createdAt": "26/09/2025",
+      "status": "active",
+      "content": "TailwindCSS là framework CSS utility-first, giúp xây dựng giao diện nhanh với class tiện lợi."
+    },
+    {
+      "id": 11,
+      "title": "ádasdasdasdasdasdasdasdasdasdasd",
+      "imageUrl": "aaaaaaaaaaaaaa",
+      "createdAt": "18/9/2025",
+      "status": "active",
+      "content": "# sadasdasdasds"
+    },
+    {
+      "id": 12,
+      "title": "dfgdfg",
+      "imageUrl": "ggggggggggggg",
+      "createdAt": "18/9/2025",
+      "status": "active",
+      "content": "dfg"
+    }
+  ]
+}
