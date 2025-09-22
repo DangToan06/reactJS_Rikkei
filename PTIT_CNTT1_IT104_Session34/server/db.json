@@ -1,0 +1,94 @@
+{
+  "students": [
+    {
+      "id": "SV001",
+      "name": "Nguyen Van A",
+      "age": 20,
+      "gender": "Nam",
+      "birthday": "2005-01-15",
+      "hometown": "Hà Nội",
+      "address": "123 Đường Láng, Đống Đa, Hà Nội"
+    },
+    {
+      "id": "SV002",
+      "name": "Tran Thi B",
+      "age": 21,
+      "gender": "Nữ",
+      "birthday": "2004-05-22",
+      "hometown": "Hải Phòng",
+      "address": "56 Lê Lợi, Ngô Quyền, Hải Phòng"
+    },
+    {
+      "id": "SV003",
+      "name": "Le Van C",
+      "age": 19,
+      "gender": "Nam",
+      "birthday": "2006-09-12",
+      "hometown": "Đà Nẵng",
+      "address": "89 Nguyễn Văn Linh, Hải Châu, Đà Nẵng"
+    },
+    {
+      "id": "SV004",
+      "name": "Pham Thi D",
+      "age": 22,
+      "gender": "Nữ",
+      "birthday": "2003-03-30",
+      "hometown": "Huế",
+      "address": "45 Hùng Vương, TP Huế"
+    },
+    {
+      "id": "SV005",
+      "name": "Hoang Van E",
+      "age": 20,
+      "gender": "Nam",
+      "birthday": "2005-07-19",
+      "hometown": "Quảng Ninh",
+      "address": "12 Trần Hưng Đạo, Hạ Long"
+    },
+    {
+      "id": "SV006",
+      "name": "Do Thi F",
+      "age": 23,
+      "gender": "Nữ",
+      "birthday": "2002-11-07",
+      "hometown": "Thanh Hóa",
+      "address": "34 Nguyễn Trãi, TP Thanh Hóa"
+    },
+    {
+      "id": "SV007",
+      "name": "Vu Van G",
+      "age": 21,
+      "gender": "Nam",
+      "birthday": "2004-02-25",
+      "hometown": "Nghệ An",
+      "address": "78 Lê Mao, Vinh"
+    },
+    {
+      "id": "SV008",
+      "name": "Bui Thi H",
+      "age": 19,
+      "gender": "Nữ",
+      "birthday": "2006-12-01",
+      "hometown": "Cần Thơ",
+      "address": "90 Nguyễn Trãi, Ninh Kiều, Cần Thơ"
+    },
+    {
+      "id": "SV009",
+      "name": "Nguyen Van I",
+      "age": 22,
+      "gender": "Nam",
+      "birthday": "2003-08-16",
+      "hometown": "Bình Định",
+      "address": "23 Phan Bội Châu, Quy Nhơn"
+    },
+    {
+      "id": "SV010",
+      "name": "Tran Thi K",
+      "age": 20,
+      "gender": "Nữ",
+      "birthday": "2005-06-10",
+      "hometown": "Lâm Đồng",
+      "address": "11 Hai Bà Trưng, Đà Lạt"
+    }
+  ]
+}
