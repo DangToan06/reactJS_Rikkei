@@ -3,9 +3,12 @@ import * as Yup from "yup";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import type { Student } from "../utils/types";
+import { useEffect } from "react";
 
 interface StudentFormProps {
   onSubmit: (student: Student) => void;
+  isEdit: boolean;
+  editStudent: Student | undefined;
 }
 
 const schema = Yup.object({
@@ -33,7 +36,11 @@ const schema = Yup.object({
   address: Yup.string().required("Địa chỉ bắt buộc"),
 });
 
-const StudentForm: React.FC<StudentFormProps> = ({ onSubmit }) => {
+const StudentForm: React.FC<StudentFormProps> = ({
+  onSubmit,
+  isEdit,
+  editStudent,
+}) => {
   const {
     register,
     handleSubmit,
@@ -53,9 +60,15 @@ const StudentForm: React.FC<StudentFormProps> = ({ onSubmit }) => {
     },
   });
 
+  useEffect(() => {
+    if (isEdit && editStudent) {
+      reset(editStudent);
+    }
+  }, [isEdit, editStudent, reset]);
+
   const onSubmitForm = (data: Student) => {
     onSubmit(data);
-    reset();
+    reset(editStudent);
   };
 
   return (
@@ -72,13 +85,20 @@ const StudentForm: React.FC<StudentFormProps> = ({ onSubmit }) => {
           helperText={errors.id?.message}
           fullWidth
         />
-        <TextField
-          label="Tên sinh viên"
-          {...register("name")}
-          error={!!errors.name}
-          helperText={errors.name?.message}
-          fullWidth
+        <Controller
+          name="name"
+          control={control}
+          render={({ field }) => (
+            <TextField
+              {...field}
+              label="Tên sinh viên"
+              error={!!errors.name}
+              helperText={errors.name?.message}
+              fullWidth
+            />
+          )}
         />
+
         <TextField
           label="Tuổi"
           type="number"

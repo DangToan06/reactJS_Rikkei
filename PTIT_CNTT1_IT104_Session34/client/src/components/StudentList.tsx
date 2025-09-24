@@ -19,6 +19,7 @@ import { useAppDispatch } from "../hook/useRedux";
 
 interface StudentListProps {
   students: Student[];
+  openEdit: (student: Student) => void;
 }
 
 const style = {
@@ -33,7 +34,7 @@ const style = {
   p: 4,
 };
 
-const StudentList: React.FC<StudentListProps> = ({ students }) => {
+const StudentList: React.FC<StudentListProps> = ({ students, openEdit }) => {
   const [open, setOpen] = React.useState(false);
   const [studentNow, setStudentNow] = useState<Student | null>(null);
   const handleOpen = (s: Student) => {
@@ -119,7 +120,11 @@ const StudentList: React.FC<StudentListProps> = ({ students }) => {
                   <Button variant="contained" color="error">
                     Xem
                   </Button>
-                  <Button variant="contained" color="warning">
+                  <Button
+                    variant="contained"
+                    color="warning"
+                    onClick={() => openEdit(s)}
+                  >
                     Sửa
                   </Button>
                   <Button
