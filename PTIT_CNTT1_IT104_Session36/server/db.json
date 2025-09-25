@@ -1,0 +1,70 @@
+{
+  "task": [
+    {
+      "id": 1,
+      "taskName": "Học code",
+      "completed": false,
+      "priority": "high"
+    },
+    {
+      "id": 2,
+      "taskName": "Làm bài tập toán",
+      "completed": true,
+      "priority": "medium"
+    },
+    {
+      "id": 3,
+      "taskName": "Đọc sách",
+      "completed": false,
+      "priority": "low"
+    },
+    {
+      "id": 4,
+      "taskName": "Ôn thi FE",
+      "completed": false,
+      "priority": "high"
+    },
+    {
+      "id": 5,
+      "taskName": "Chơi thể thao",
+      "completed": true,
+      "priority": "low"
+    },
+    {
+      "id": 6,
+      "taskName": "Viết báo cáo",
+      "completed": false,
+      "priority": "medium"
+    },
+    {
+      "id": 7,
+      "taskName": "Học tiếng Anh",
+      "completed": false,
+      "priority": "high"
+    },
+    {
+      "id": 8,
+      "taskName": "Đi chợ",
+      "completed": true,
+      "priority": "low"
+    },
+    {
+      "id": 9,
+      "taskName": "Xem lại bài cũ",
+      "completed": false,
+      "priority": "medium"
+    },
+    {
+      "id": 10,
+      "taskName": "Lập kế hoạch tuần",
+      "completed": false,
+      "priority": "high"
+    },
+    {
+      "id": 1758755280029,
+      "taskName": "ăn",
+      "completed": false,
+      "priority": "medium"
+    }
+  ]
+}
