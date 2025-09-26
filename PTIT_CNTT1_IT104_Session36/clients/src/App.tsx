@@ -9,6 +9,8 @@ import type { TaskI } from "./interfaces/task.interface";
 
 const App = () => {
   const { data: tasks, error, status } = useAppSelector((store) => store.tasks);
+  console.log(error);
+
   const dispatch = useAppDispatch();
 
   useEffect(() => {

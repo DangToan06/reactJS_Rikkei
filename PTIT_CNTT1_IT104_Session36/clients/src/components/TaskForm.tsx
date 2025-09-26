@@ -8,6 +8,8 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import { useAppSelector } from "../hooks/useRedux";
+// import { useDispatch } from "react-redux";
+// import { getTaskDetail } from "../redux/slices/task.slice";
 
 interface TaskFormProps {
   onAdd: (title: string, priority: "low" | "medium" | "high") => void;
@@ -15,13 +17,21 @@ interface TaskFormProps {
 
 const TaskForm: React.FC<TaskFormProps> = ({ onAdd }) => {
   const { data: tasks } = useAppSelector((store) => store.tasks);
+  const [touched, setTouched] = useState(false);
+  const { task } = useAppSelector((store) => store.tasks);
+  // const [taskUpdate, setTaskUpdate] = useState<TaskI | null>(null);
   const [title, setTitle] = useState("");
   const [priority, setPriority] = useState<"low" | "medium" | "high">("medium");
 
+  // useEffect(() => {
+  //   setInputValue(task?.name || "");
+  // }, [idTaskUpdate]);
+
+  // const dispatch = useDispatch();
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (title === "") {
-      alert("Tên công việc không được để trống");
+    if (title.trim() === "") {
       return;
     }
 
@@ -48,12 +58,19 @@ const TaskForm: React.FC<TaskFormProps> = ({ onAdd }) => {
       className="flex gap-4 items-center bg-white p-4 rounded-2xl shadow-md"
     >
       <TextField
-        label="Công việc mới"
+        label={
+          title.trim() === ""
+            ? "Công việc không được để trống"
+            : "Công việc mới"
+        }
         variant="outlined"
         size="small"
         value={title}
+        // error={title.trim() === ""}
         onChange={(e) => setTitle(e.target.value)}
         className="flex-1"
+        onBlur={() => setTouched(true)}
+        error={touched && title.trim() === ""}
       />
       <FormControl size="small" className="w-36">
         <InputLabel>Ưu tiên</InputLabel>
@@ -69,8 +86,14 @@ const TaskForm: React.FC<TaskFormProps> = ({ onAdd }) => {
           <MenuItem value="high">Cao</MenuItem>
         </Select>
       </FormControl>
-      <Button type="submit" variant="contained" color="primary">
-        Thêm
+
+      <Button
+        type="submit"
+        variant="contained"
+        color="primary"
+        // onClick={() => dispatch(getTaskDetail(null))}
+      >
+        {task ? "Cập nhật" : "Thêm"}
       </Button>
     </form>
   );

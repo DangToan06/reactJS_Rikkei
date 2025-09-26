@@ -1,0 +1,58 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Nguyen Van A",
+      "age": 18,
+      "grade": "11A1"
+    },
+    {
+      "id": 2,
+      "name": "Tran Thi B",
+      "age": 17,
+      "grade": "11A2"
+    },
+    {
+      "id": 3,
+      "name": "Le Van C",
+      "age": 18,
+      "grade": "11A3"
+    },
+    {
+      "id": 4,
+      "name": "Pham Thi D",
+      "age": 17,
+      "grade": "11A4"
+    },
+    {
+      "id": 5,
+      "name": "Hoang Van E",
+      "age": 18,
+      "grade": "11A5"
+    },
+    {
+      "id": 6,
+      "name": "Do Thi F",
+      "age": 16,
+      "grade": "10A1"
+    },
+    {
+      "id": 7,
+      "name": "Bui Van G",
+      "age": 16,
+      "grade": "10A2"
+    },
+    {
+      "id": 8,
+      "name": "Ngo Thi H",
+      "age": 17,
+      "grade": "11A1"
+    },
+    {
+      "id": 10,
+      "name": "Dang Thi K",
+      "age": 17,
+      "grade": "12A2"
+    }
+  ]
+}

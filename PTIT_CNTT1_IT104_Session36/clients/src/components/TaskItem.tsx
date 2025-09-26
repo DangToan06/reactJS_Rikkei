@@ -2,6 +2,8 @@ import { Checkbox, Chip, IconButton } from "@mui/material";
 import { Delete, Edit } from "@mui/icons-material";
 
 import React from "react";
+import { useDispatch } from "react-redux";
+import { getTaskDetail } from "../redux/slices/task.slice";
 
 interface TaskItemProps {
   id: number;
@@ -26,6 +28,8 @@ const TaskItem: React.FC<TaskItemProps> = ({
   onToggle,
   onDelete,
 }) => {
+  const dispatch = useDispatch();
+
   return (
     <div className="flex items-center justify-between bg-white p-3 rounded-xl shadow-sm mb-2">
       <div className="flex items-center gap-3">
@@ -47,7 +51,7 @@ const TaskItem: React.FC<TaskItemProps> = ({
           <Delete />
         </IconButton>
         <IconButton color="primary">
-          <Edit />
+          <Edit onClick={() => dispatch(getTaskDetail(id))} />
         </IconButton>
       </div>
     </div>

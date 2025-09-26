@@ -9,5 +9,5 @@ export interface InitialStateType {
   status: "idle" | "pending" | "success" | "failed";
   data: TaskI[];
   error: null | undefined | string;
-  //   task: Task | null;
+  task: number | null | undefined;
 }

@@ -6,12 +6,23 @@ const initialState: InitialStateType = {
   status: "idle",
   data: [],
   error: null,
+  task: null,
 };
 
 const taskSlice = createSlice({
   name: "task",
   initialState,
-  reducers: {},
+  reducers: {
+    getTaskDetail(state, action) {
+      // console.log(action.payload);
+
+      if (action.payload === null || action.payload === undefined) {
+        state.task = null;
+      } else {
+        state.task = action.payload;
+      }
+    },
+  },
   extraReducers(builder) {
     builder
       .addCase(getAllTasks.pending, (state) => {
@@ -20,6 +31,7 @@ const taskSlice = createSlice({
       .addCase(getAllTasks.fulfilled, (state, action) => {
         state.status = "success";
         state.data = action.payload;
+        console.log(state.data);
       })
       .addCase(getAllTasks.rejected, (state, action) => {
         state.status = "failed";
@@ -35,4 +47,4 @@ const taskSlice = createSlice({
 });
 
 export default taskSlice.reducer;
-// export const { getTaskDetail } = taskSlice.actions;
+export const { getTaskDetail } = taskSlice.actions;
