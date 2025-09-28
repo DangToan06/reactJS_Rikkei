@@ -1,0 +1,74 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "A Brief History of Time",
+      "author": "Stephen Hawking",
+      "year": 1988,
+      "category": "Science"
+    },
+    {
+      "id": "2",
+      "title": "The Selfish Gene",
+      "author": "Richard Dawkins",
+      "year": 1976,
+      "category": "Science"
+    },
+    {
+      "id": "3",
+      "title": "Cosmos",
+      "author": "Carl Sagan",
+      "year": 1980,
+      "category": "Science"
+    },
+    {
+      "id": "4",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "year": 1925,
+      "category": "Literature"
+    },
+    {
+      "id": "5",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "year": 1960,
+      "category": "Literature"
+    },
+    {
+      "id": "6",
+      "title": "1984",
+      "author": "George Orwell",
+      "year": 1949,
+      "category": "Literature"
+    },
+    {
+      "id": "7",
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "year": 2008,
+      "category": "Programming"
+    },
+    {
+      "id": "8",
+      "title": "Introduction to Algorithms",
+      "author": "Thomas H. Cormen",
+      "year": 1990,
+      "category": "Programming"
+    },
+    {
+      "id": "9",
+      "title": "Design Patterns",
+      "author": "Erich Gamma et al.",
+      "year": 1994,
+      "category": "Programming"
+    },
+    {
+      "id": "10",
+      "title": "The Pragmatic Programmer",
+      "author": "Andrew Hunt, David Thomas",
+      "year": 1999,
+      "category": "Programming"
+    }
+  ]
+}
